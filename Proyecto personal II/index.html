@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Technology</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,33 +14,32 @@
 
                 <div class="container--center navbar__column--left">
                     <div>
-                        <a class="navbar__logo"><img src="assets/Logotype-white.svg" alt=""></a>
+                        <a class="navbar__logo"><img src="assets/Logotype-white.svg" alt="logo"></a>
                     </div>
 
                 </div>
                 <div class="container--center navbar__column--right">
                     <div class="icon-wrapper">
                         <img src="assets/menu.svg" 
-                        class="icon-open" width="30px" height="30px" onclick="openModal()" alt="">
+                        class="icon-open" width="30px" height="30px" onclick="openModal()" alt="menu">
                         <img src="assets/close.svg" 
-                        class="icon-close hidden" width="30px" height="30px" onclick="closeModal()" alt="">
+                        class="icon-close hidden" width="30px" height="30px" onclick="closeModal()" alt="x">
                     </div>
                     <div class="menu">
                         <div>
-                            <a class="navbar__links" href="About">About</a>
+                            <a class="navbar__links" href="#">About</a>
                         </div>
                         <div>
-                            <a class="navbar__links" href="Explore">Explore</a>
+                            <a class="navbar__links" href="#">Explore</a>
                         </div>
                         <div>
-                            <a class="navbar__links" href="Learn">Learn</a>
+                            <a class="navbar__links" href="#">Learn</a>
                         </div>
                         <div>
-                            <a class="navbar__links" href="Connect">Connect</a>
+                            <a class="navbar__links" href="#">Connect</a>
                         </div>
 
                     </div>
-                    
                 </div>
             </nav>
             <div class="container--double-column">
@@ -66,7 +65,7 @@
             <div class="container--double-column">
                 <div class="column column-image">
                     
-                        <img src="assets/Bitmap17_2x.png" alt="">
+                        <img src="assets/firefox.png" alt="">
                     
                 </div>
                 <div class="column">
@@ -75,13 +74,9 @@
                         <p>Will VR turn the internet upside down? Take Firefox Reality for a spin on a virtual
                          reality headst and find out. Meet a T-Rex or make robots dance the Cha-Cha on the only 
                          internet browser made for VR.</p>
-                        <button class="section-button">Learn More</button>
-
-                   
-                    
+                        <button class="section-button">Learn More</button>  
                 </div>
-            </div>
-            
+            </div>     
         </div>
 
     </section>
@@ -99,7 +94,7 @@
                 </div>
                 <div class="column">
                     
-                        <img src="assets/Bitmap1_2x.png" alt="">
+                        <img src="assets/robot.png" alt="">
                     
                     
                 </div>
@@ -139,7 +134,7 @@
         <div class="box">
             <div class="container--double-column">
                 <div class="column__img">
-                    <img src="assets/Sign_Up_2x.png" alt="">
+                    <img src="assets/Sign-Up.png" alt="">
                 </div>
                 <div class="column column__text">
                     <h2>Get it first.</h2>
@@ -164,37 +159,32 @@
             
             <div class="container--double-column">
                 <div class="column">
-                    <a href="">Mozilla</a>
-                    <a href="">About</a>
-                    <a href="">Press</a>
-                    <a href="">Careers</a>
+                    <a href="#">Mozilla</a>
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Careers</a>
                 </div>
                 <div class="column">
-                    <a href=""><img src="assets/instagram.svg" alt=""></a>
-                    <a href=""><img src="assets/youtube.svg" alt=""></a>
-                    <a href=""><img src="assets/twitter-logo-silhouette.svg" alt=""></a>
+                    <a href="#"><img src="assets/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="assets/youtube.svg" alt="youtube"></a>
+                    <a href="#"><img src="assets/twitter-logo-silhouette.svg" alt="twitter"></a>
                     
                 </div>
-
-
             </div>
-            
         </div>
-
     </footer>
     <script>
         function closeModal() {
         let menu = document.querySelector(".menu");
         let closeIcon = document.querySelector(".icon-close");
         let openIcon = document.querySelector(".icon-open");
-        let hidemenu = document.querySelector(".navbar__column--left");
-        let filas = document.querySelector(".navbar__container");
-        let pequeno = document.querySelector(".navbar__column--right");
+        let rows = document.querySelector(".navbar__container");
+        let small = document.querySelector(".navbar__column--right");
         menu.classList.remove("visible");
         closeIcon.classList.add("hidden");
         openIcon.classList.remove("hidden");
-        filas.classList.remove("columnas");
-        pequeno.classList.remove("boxes");
+        rows.classList.remove("column-add");
+        small.classList.remove("boxes");
 
       }
 
@@ -203,15 +193,13 @@
         let closeIcon = document.querySelector(".icon-close");
         let openIcon = document.querySelector(".icon-open");
         let hidemenu = document.querySelector(".navbar__column--left");
-        let columna = document.querySelector(".navbar__container");
-        let agrandar = document.querySelector(".navbar__column--right");
+        let columns = document.querySelector(".navbar__container");
+        let expand = document.querySelector(".navbar__column--right");
         menu.classList.add("visible");
         closeIcon.classList.remove("hidden");
         openIcon.classList.add("hidden");
-        columna.classList.add("columnas");
-        agrandar.classList.add("boxes");
-
-        /* hidemenu.classList.add("hidden"); */
+        columns.classList.add("column-add");
+        expand.classList.add("boxes");
       }
     </script>
 
