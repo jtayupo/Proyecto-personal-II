@@ -393,7 +393,8 @@ form label{
    }
    .boxes{
        width: 360px;
-       background-color: var(--black-color);
+       background-color: #151b24;
+       border: solid #23726a;
        padding-bottom: 20px;
    }
    header .box{
