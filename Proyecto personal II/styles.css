@@ -234,7 +234,7 @@ header .column{
 
 /* video section */
 .video__section{
-    background-color: var(--white-color);
+    background-color: var(--gray-color);
 }
 .video__section .box{
     display: flex;
