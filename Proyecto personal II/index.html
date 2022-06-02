@@ -11,24 +11,36 @@
     <header class="container--center">
         <div class="box">
             <nav class="container navbar__container">
+
                 <div class="container--center navbar__column--left">
                     <div>
                         <a class="navbar__logo"><img src="assets/Logotype-white.svg" alt=""></a>
                     </div>
+
                 </div>
                 <div class="container--center navbar__column--right">
-                    <div>
-                        <a class="navbar__links" href="About">About</a>
+                    <div class="icon-wrapper">
+                        <img src="assets/menu.svg" 
+                        class="icon-open" width="30px" height="30px" onclick="openModal()" alt="">
+                        <img src="assets/close.svg" 
+                        class="icon-close hidden" width="30px" height="30px" onclick="closeModal()" alt="">
                     </div>
-                    <div>
-                        <a class="navbar__links" href="Explore">Explore</a>
+                    <div class="menu">
+                        <div>
+                            <a class="navbar__links" href="About">About</a>
+                        </div>
+                        <div>
+                            <a class="navbar__links" href="Explore">Explore</a>
+                        </div>
+                        <div>
+                            <a class="navbar__links" href="Learn">Learn</a>
+                        </div>
+                        <div>
+                            <a class="navbar__links" href="Connect">Connect</a>
+                        </div>
+
                     </div>
-                    <div>
-                        <a class="navbar__links" href="Learn">Learn</a>
-                    </div>
-                    <div>
-                        <a class="navbar__links" href="Connect">Connect</a>
-                    </div>
+                    
                 </div>
             </nav>
             <div class="container--double-column">
@@ -118,7 +130,7 @@
                 </p>
             <div class="column">
                 
-                <iframe  src="https://www.youtube.com/embed/LSoMX2PmlNI" title="YouTube video player" frameborder="0" allow="accelerometer;
+                <iframe src="https://www.youtube.com/embed/LSoMX2PmlNI" title="YouTube video player" frameborder="0" allow="accelerometer;
                  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -170,6 +182,38 @@
         </div>
 
     </footer>
+    <script>
+        function closeModal() {
+        let menu = document.querySelector(".menu");
+        let closeIcon = document.querySelector(".icon-close");
+        let openIcon = document.querySelector(".icon-open");
+        let hidemenu = document.querySelector(".navbar__column--left");
+        let filas = document.querySelector(".navbar__container");
+        let pequeno = document.querySelector(".navbar__column--right");
+        menu.classList.remove("visible");
+        closeIcon.classList.add("hidden");
+        openIcon.classList.remove("hidden");
+        filas.classList.remove("columnas");
+        pequeno.classList.remove("boxes");
+
+      }
+
+      function openModal() {
+        let menu = document.querySelector(".menu");
+        let closeIcon = document.querySelector(".icon-close");
+        let openIcon = document.querySelector(".icon-open");
+        let hidemenu = document.querySelector(".navbar__column--left");
+        let columna = document.querySelector(".navbar__container");
+        let agrandar = document.querySelector(".navbar__column--right");
+        menu.classList.add("visible");
+        closeIcon.classList.remove("hidden");
+        openIcon.classList.add("hidden");
+        columna.classList.add("columnas");
+        agrandar.classList.add("boxes");
+
+        /* hidemenu.classList.add("hidden"); */
+      }
+    </script>
 
 </body>
 </html>
