@@ -467,6 +467,7 @@ form label{
         font-size: var(--font-size);
         font-weight: bold;
         border-radius: 5px;
+        color: var(--black-color);
     }
 
     /* footer container */
@@ -491,6 +492,22 @@ form label{
     .footer__container a{
         text-align: center;
     }
+
+            /* keyframes */
+
+            header p, h1, button {
+                animation-name: mover;
+                animation-duration: 2.5s;
+            }
+            @keyframes mover{
+                from{
+                    
+                    transform: translateY(60%);
+                }
+                to{
+                    transform: translateY(0);
+                }
+            }
 
 }
 
